@@ -1,20 +1,99 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ahorcado</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div>
+        <div><label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 border border-secondary">
+                    <h1 id="titulo" class="text-center">{{title}}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col border border-secondary">
+                    <div class="row">
+
+
+
+                        <!--SECCION DE ACCIONES -->
+                        <div class="col col-7 border-secondary"><label id="acciones">{{acciones}} &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                            <div class="col-4">
+                              <button class="btn btn-primary" type="button" style="width: 127px;height: 35px;">Nuevo Juego</button>
+                              <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></label>
+                              <button class="btn btn-primary" type="button" style="width: 147px;height: 44px;">Comenzar Juego</button>
+                              <label>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</label>
+                            </div>
+                            <input
+                                type="text" style="margin: 14px;">
+                                <div align="center">
+                                  <button class="btn btn-primary d-md-flex" type="button">Enviar Letra</button>
+                                </div>
+                                <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></label>
+                              </div>
+
+                        <!--SECCION DE ESTADISTICAS -->
+                        <div class="col border border-secondary">
+                            <div><label>{{estadisticas}}</label></div>
+                            <div><label>{{aciertos}}</label>
+                              <label>{{numaciertos}}</label>
+                            </div>
+                            <div><label>{{desaciertos}}</label>
+                              <label>{{numdesaciertos}}</label>                           
+                             </div>
+                            <div><label>{{totalJugadas}}</label>
+                              <label>{{numtotaljugadas}}</label>                           
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--SECCION DE MENSAJE-->
+                    <div class="row">
+                        <div class="col border border-secondary">
+                            <div>
+                              <label>{{sms}}&nbsp;</label>
+                            </div>
+                            <div><textarea class="col-12"></textarea>
+                            </div>
+                            <label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col border border-secondary col-3">
+                    <div class="row">
+                        <div class="col">
+                            <div style="margin: 20px;">
+                              <div class="col" align="center">
+                                <img class="d-md-flex" src="assets/img/20171205_173553.jpg" style="width: 100px;height: 100px;" />
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">                    
+                          <h3 class="col-form-label">{{guiones}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SECCION DEL NOMBRE DEL SACO WEAS -->
+        <div align="center"><label>{{student}}&nbsp;</label>
+          <label>{{nomestudiante}}</label>            
+          <label>&nbsp;{{nameclass}}</label></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
 
